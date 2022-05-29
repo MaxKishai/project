@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>My homepage</title>
+    
+    <style>
+        .box1{
+            height: 100vh;
+             
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .box2{
+            height: 100vh;
+
+            
+        }
+        
+        .box1:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10vh;
+            height: 80vh;
+            width: 2px;
+            background-color: #141414;
+        }
+        
+        .lol{
+            width: 360px;
+            height: 400px;
+        }
+        .mar{
+            position: relative;
+            margin: 50px;
+        }
+        .buttons a{
+            border: 1px solid #141414;
+            border-radius: 4px;
+            padding: 10px 25px;
+            color: #141414;
+            text-decoration: none;
+        }
+        .buttons a:hover{
+            background-color: #141414;
+            color: #ffffff;
+        }
+        p{
+            font-family: 'Goldman', cursive;
+        }
+        .buttons{
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .insta{
+            width: 25px;
+            height: 25px;
+            float: left;
+        }
+        
+        .social{
+            position: relative;
+            bottom: 0;
+            left: 0;
+            margin-top: 250px;
+        }
+            
+        .social img{
+            margin: 10px;      
+        }
+        .git{
+            width: 25px;
+            height: 25px;
+            float: left;
+        }
+        .facebook{
+            width: 25px;
+            height: 25px;
+            float: left;
+        }
+        body{
+            margin: 0;
+
+            background: linear-gradient(45deg, #1a2a6c,#b21f1f, #fdbb2d);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;   
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+    
+    </style>
+</head>
+
+<body>
+   <div class="row" id="row">
+       
+       <div class="box1 col-md-6 col-xs-12 col-sm-12">
+           <img class="lol" src="img/ava.jpg" alt="ava.jpg">
+       </div>
+       
+       <div class="box2 col-md-6 col-xs-12 col-sm-12">
+          
+          <div class="mar">
+           <h1>Max</h1>
+        
+           
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem perferendis culpa repellendus veniam libero neque illo magni similique beatae mollitia atque, blanditiis tempora quam a doloribus expedita quae ipsa inventore rerum voluptas fugiat, optio voluptates architecto. Ullam temporibus dicta officiis blanditiis est soluta alias incidunt, deleniti suscipit saepe hic eveniet.</p>
+           
+           <div class="row justify-content-around buttons">
+               <a href="portfolio.html">My portfolio</a>
+               <a href="#">About me</a>
+           </div>
+           
+           <div class="row justify-content-center social">
+               <a href="https://www.instagram.com/wertuhan12/" target="_blank">
+                   <img class="insta" src="img/instagram.png" alt="">
+               </a>
+                  <a href="https://github.com/MaxKishai" target="_blank">
+                   <img class="git" src="img/github.png" alt="">
+               </a>
+                  <a href="https://www.facebook.com/profile.php?id=100060818121703" target="_blank">
+                   <img class="facebook" src="img/facebook.png" alt="">
+               </a>
+           </div>
+       </div>     
+   </div>
+    </div>
+    <script src="three.r119.min.js"></script>
+<script src="vanta.net.min.js"></script>
+    <script src="main.js">
+
+
+    </script>
+</body>
+</html>

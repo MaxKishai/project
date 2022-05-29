@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+
+            background: linear-gradient(45deg, #1E9600,#FFF200, #f64f59);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;   
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        .wrap{
+            display: flex;
+            width: 100%;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .figure{
+            width: 340px;
+            height: 360px;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center ;
+            justify-content: center;
+            align-items: center;    
+            padding: 7px;    
+            display: flex;
+            position: relative;
+        }
+        .figure img{
+            transition: 0.2s;
+            transform: translateY(25px);
+        }
+        
+            
+      .figure:hover{
+          border-width: 3px;
+      }
+        
+        .figure:hover img{
+            transform: translateY(0);
+        }
+       
+      
+        
+        .img{
+            width: 260px;
+            height: 250px;
+        }
+        a{
+            text-decoration: None;
+            font-weight: 900;
+            color: azure;
+        }
+        .buttons .a{
+            border: 1px solid #141414;
+            border-radius: 4px;
+            padding: 10px 25px;
+            color: #141414;
+            text-decoration: none;
+            
+        }
+        .buttons .a:hover{
+            background-color: #141414;
+            color: #ffffff;
+        }
+        .butt{
+            width: 100%;
+            height: 20vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        
+        
+        <figure class="figure">
+            <figcaption>
+                <img src="img/ter.jpg" alt="" class="img">
+                <a href="https://maxkishai.github.io/terraria/">Проект_Террария</a>
+            </figcaption>
+        </figure>
+        <figure class="figure">
+            <figcaption>
+                <img src="img/matr.jpg" alt="" class="img">
+                <a href="https://maxkishai.github.io/Matrix/">Матриця</a>
+            </figcaption>
+        </figure>
+        <figure class="figure">
+            <figcaption>
+                <img src="img/text.jpg" alt="" class="img">
+                <a href="https://maxkishai.github.io/text-reader/">Text_Reader</a>
+            </figcaption>
+        </figure>
+       
+    </div>
+    <div class="butt">
+        <div class="row justify-content-around buttons">
+            <a href="index.html" class="a">Back</a>
+        </div>
+
+    </div>
+</body>
+</html>
